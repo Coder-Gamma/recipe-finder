@@ -1,5 +1,6 @@
 {
   "name": "recipe-finder",
+  "homepage": "https://Coder-Gamma.github.io/recipe-finder",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "server": "node server.js",
     "start": "node server.js",
     "test-db": "node src/scripts/testConnection.js",
